@@ -11,6 +11,10 @@ const corsOptions = {
   optionsSuccessStatus: 204,
 };
 
+app.get("/", (req, res) => {
+  res.send("Hello from GaadiPaar Backend!");
+});
+
 app.use(cors(corsOptions));
 
 app.use(express.json());
